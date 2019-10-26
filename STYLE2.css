@@ -16,15 +16,31 @@ html,body{
         overflow-x: hidden;
         font-family: monotype-grotesque-extra-con, sans-serif;
         font-style: normal;
-        font-weight: 400;S
+        font-weight: 400;
         font-size: 12px;
         line-height: 12px;
         color: #bfbfbf;
         -webkit-font-smoothing: antialiased;
         font-smoothing: antialiased;
         background: #000;
+        cursor: none;
     }
-    
+   .cursor{
+        position: absolute;
+        top:50%;
+        left:50%;
+        width:20px;
+        transform: translate(-50%,-50%);
+        transition: width 0.3s;
+        
+        
+    }
+    .hidden{
+        display: none
+    }
+    .cursor.is-down{
+        width:30px;
+    }
     nav img{
         margin-top: .4%;
         width: 15%;
@@ -164,6 +180,7 @@ html,body{
     .box-inner {
         padding: 10px;
         height: 100%;
+        
     }
     .box.image .preview, .box.image-bleed .preview {
         background-image: url(fondocards.png);
@@ -177,6 +194,7 @@ html,body{
     .preview{
         background-image: url(fondocards.png);
         background-size: cover;
+        cursor: pointer;
     }
     .box-inner{
         padding: 10px;
@@ -200,7 +218,7 @@ html,body{
         font-size: 12px;
         line-height: 12px;
         margin-bottom: 15px;
-        lin
+        
         
     }
     a {
@@ -290,3 +308,72 @@ html,body{
     }
     
    
+
+@media (max-width: 960px){
+.box {
+    width: calc(50% - 2px);
+}
+nav img {
+    margin-top: .4%;
+    width: 22%;
+    height: 14%;
+    padding-left: 1%;
+}
+.navbar input {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.4%;
+    text-decoration: none;
+    width: 6%;
+    
+}
+.banner {
+    width: 100%;
+    position: relative;
+}
+.zeppelin {
+    display:none
+ }
+}
+@media (max-width: 640px){
+.box {
+    width: 100%;
+    margin-right: 0;
+}
+.zeppelin {
+   display:none
+}
+.navbar input {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1%;
+    text-decoration: none;
+    width: 12%;
+}
+nav img {
+    margin-top: 1.5%;
+    width: 40%;
+    height: 14%;
+    padding-left: 1%;
+}
+#linksFooter {
+    justify-content: center;
+    flex-wrap: wrap;
+    align-self: center;
+    width: 29.6%;
+}
+.gmail {
+    width: 95%;
+    padding: 10px;
+}
+.puerta{
+    display:none;
+}
+.copy {
+    width: 53%;
+}
+}
