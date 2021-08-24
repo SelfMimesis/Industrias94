@@ -1,0 +1,391 @@
+@keyframes spin{
+    0%{transform: rotate(0deg)}
+100%{transform: rotate(360deg)}
+}
+
+@font-face {
+    font-family: CirrusCumulusByClaraSambot;
+    src: url(../../fonts/CirrusCumulus.otf);
+  }
+
+
+html,body{
+
+  
+    font-family: CirrusCumulusByClaraSambot;
+    font-style: normal;
+    font-weight: 200;
+    
+    width: 100%;
+    height: 100%;
+    
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    }
+
+    
+    nav img{
+        margin-top: .4%;
+        width: 15%;
+        height: 14%;
+        
+        padding-left: 1%
+    }
+
+    nav img:hover{
+        content:attr(data-text);
+        position:absolute;
+        left:10px;
+        text-shadow:-1px 0 black;
+        top:0;
+        color:white;
+        background:black;
+        overflow:hidden;
+        clip:rect(0,1000px,0,0); 
+        animation:noise-anim 2s infinite linear alternate-reverse;
+        -webkit-filter: invert(100%); /* Safari */
+        filter: invert(100%);
+      }
+
+      nav input:hover {
+        -webkit-filter: invert(100%); /* Safari */
+        filter: invert(100%);
+     
+      }
+
+      .navlinks{
+        float: right;
+    }
+
+    .navbar {
+        background-image: url(../../img/nav.png);
+        background-size: cover;
+        width: 100%;
+        background-color: #333; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        transition: top 0.3s; 
+        border-bottom: 3px solid black;
+        z-index: 10;
+        
+    }
+
+    #linkNav{
+        display: inline;
+    }
+
+    .navbar input {
+        float: right;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 0.4%;
+        text-decoration: none;
+        width: 4%;
+        
+    }
+.fotodiego2{
+    width: 43% !important;
+}
+
+a img{
+    width: 80% !important;
+}
+h2{
+    color: white;
+    font-size: 80px;
+}
+    .sangria{
+        width: 100%;
+        height: 50px;
+        
+    }
+    .sangria2{
+        width: 100%;
+        height: 25px;
+       
+    }
+    .sangria3{
+        width: 100%;
+        height: .5px;
+        
+    }
+.link{
+    display: flex;
+    justify-content: center;
+}
+    h2{
+        margin-top: 0px;
+    }
+    
+    .fondofooter{
+        width: 100%;
+        border-top:1px solid  grey
+    }
+    footer{
+        width: 100%;
+        height: auto;
+        background-image: url(../../img/footer.png);
+        background-size: cover;
+        display:inline-block;
+        
+       
+    }
+   
+    .logos{
+        width:100%;
+        display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+    }
+    .fb{
+        width:100%;
+        cursor: pointer;
+        align-self: center;
+    }
+    .ig{
+        width: 100%;
+        cursor: pointer;
+        align-self: center;
+    }
+    .gmail{
+        width:15%
+    }
+    .copy{
+        width:15%;
+    }
+    .mail{
+        width:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .i94{
+        width:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav a {
+        
+        text-decoration: none;
+        background-color: transparent;
+        
+  
+    }
+    #linksFooter{
+        justify-content: center;
+  flex-wrap: wrap;
+  align-self: center;
+  width: 3%;
+    }
+
+    .fondoGaleria{
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        flex-direction: column;
+        background-color: black;
+    background-size: cover;
+    width: 100%;
+    
+    }
+   .fondoGaleria p{
+    color: white;
+    text-align: center;
+    width: 38%;
+    margin-bottom: 39px;
+    margin-top: 0px;
+   }
+    .fondoGaleria img{
+        width: 56.9%
+    }
+
+    .stamps{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+
+    }
+    .stamps{
+        
+        transform: translate(-64px, -50px);
+    }
+
+    .stamps img{
+        max-width: 203px;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        animation: spin 120s;
+    }
+
+    .diegolink1{
+        margin:2%
+    }
+
+    .seccionDiego2{
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        flex-direction: column;
+        background-color: black;
+    background-size: cover;
+    width: 100%;
+    }
+
+   footer img{
+       width: 20% !important;
+   }
+
+   .centro {
+    display: flex !important;
+    justify-content: center !important;
+   }
+    
+   .ig2{
+    width: 14% !important;
+    margin-bottom: 20%;
+   }
+@media (max-width: 960px){
+    .box {
+        width: calc(50% - 2px);
+    }
+    nav img {
+        margin-top: .4%;
+        width: 22%;
+        height: 14%;
+        padding-left: 1%;
+    }
+    .navbar input {
+        float: right;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 0.4%;
+        text-decoration: none;
+        width: 6%;
+        
+    }
+    .banner {
+        width: 100%;
+        position: relative;
+    }
+    .zeppelin {
+        display:none
+     }
+    }
+    @media (max-width: 640px){
+        html{
+            width: 100vw;
+        }
+
+        section img {
+            width: 42%;
+            position: relative;
+            border: 3px solid black;
+        }
+
+        section div {
+          padding: 0px;
+            width: 41%;
+            text-align: center;
+            font-size: 8px;
+            position: relative;
+            background-color: black;
+            border: 1px solid white;
+        }
+
+        footer img {
+            width: 60% !important;
+        }
+    .box {
+        width: 100%;
+        margin-right: 0;
+    }
+    .navbar{
+        width: 100vw;
+    }
+    .ciudad-der{
+        display: none;
+    }
+    .ciudad-izq{
+        display: none;
+    }
+    .zeppelin {
+       display:none
+    }
+    h2 {
+        color: white;
+        font-size: 44px;
+        text-align: center;
+    }
+    .navbar input {
+        float: right;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 1%;
+        text-decoration: none;
+        width: 12%;
+    }
+    nav img {
+        margin-top: 1.5%;
+        width: 40%;
+        height: 14%;
+        padding-left: 1%;
+    }
+    #linksFooter {
+        justify-content: center;
+        flex-wrap: wrap;
+        align-self: center;
+        width: 19.6%;
+    }
+    .gmail {
+        width: 72%;
+        padding: 10px;
+    }
+    .puerta{
+        display:none;
+    }
+    .fotodiego2 {
+        width: 180% !important;
+    }
+    .fondoGaleria p {
+        color: white;
+        text-align: center;
+        width: 88%;
+        margin-bottom: 39px;
+        margin-top: 0px;
+    }
+    a img {
+        width: 86% !important;
+    }
+    .copy {
+        width: 53%;
+    }
+
+    .ig2 {
+        width: 19% !important;
+        margin-bottom: 14%;
+    }
+    .fotogrupo {
+        width: 239.9% !important;
+        padding-left: 16% !important;
+    }
+
+    @media only screen and (max-width: 600px) {
+        header {
+            width: 100%;
+            height: 27vh;
+            background-image: url(../../img/fondoeventos.png);
+            background-size: cover;
+            position: relative;
+            /* background-attachment: fixed; */
+            /* background-repeat: no-repeat; */
+            /* background-position: center center; */
+        }
+      }

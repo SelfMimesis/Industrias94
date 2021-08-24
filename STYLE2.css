@@ -1,7 +1,13 @@
+@font-face {
+    font-family: CirrusCumulusByClaraSambot;
+    src: url(../fonts/CirrusCumulus.otf);
+  }
+
+ 
 html,body{
 
-    background-color: black;
-    font-family: monotype-grotesque-extra-con, sans-serif;
+    background-color: white;
+    font-family: CirrusCumulusByClaraSambot;
     font-style: normal;
     font-weight: 200;
     
@@ -14,17 +20,18 @@ html,body{
     }
     body {
         overflow-x: hidden;
-        font-family: monotype-grotesque-extra-con, sans-serif;
+        font-family: CirrusCumulusByClaraSambot;
         font-style: normal;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 16px;
         line-height: 12px;
         color: #bfbfbf;
         -webkit-font-smoothing: antialiased;
         font-smoothing: antialiased;
         background: #000;
-        cursor: none;
+     
     }
+    /*
    .cursor{
         position: absolute;
         top:50%;
@@ -34,7 +41,7 @@ html,body{
         transition: width 0.3s;
         
         
-    }
+    } */
     .hidden{
         display: none
     }
@@ -81,7 +88,7 @@ html,body{
         float: right;
     }
     .navbar {
-        background-image: url(nav.png);
+        background-image: url(img/nav.png);
         background-size: cover;
         width: 100%;
         background-color: #333; 
@@ -124,8 +131,22 @@ html,body{
     }
     .banner{
         width: 100%;
+        position: relative;
     }
-    .banner img{
+    .ciudad-izq{
+        position: absolute;
+        width: 7%;
+        top: 80%;
+        left: 0.6%;
+        height: 202%;
+      }
+      .ciudad-der{
+        position: absolute;
+        top: 79%;
+        left: 92%;
+        width: 7%;
+      }
+    .fondo-home{
         width: 100%;
         top:10px;
     }
@@ -156,7 +177,7 @@ html,body{
         display:grid;
         grid-template: 1fr/9% 82% 9% ;
         height: auto;
-        background-image: url(fondocontenido.png);
+        background-image: url(img/fondocontenido.png);
         background-size: 33%;
     }
     .item{
@@ -183,7 +204,7 @@ html,body{
         
     }
     .box.image .preview, .box.image-bleed .preview {
-        background-image: url(fondocards.png);
+        background-image: url(img/fondocards.png);
         background-size: cover;
         height: 100%;
     }
@@ -192,7 +213,7 @@ html,body{
         height: auto;
     }
     .preview{
-        background-image: url(fondocards.png);
+        background-image: url(img/fondocards.png);
         background-size: cover;
         cursor: pointer;
     }
@@ -265,7 +286,7 @@ html,body{
     footer{
         width: 100%;
         height: auto;
-        background-image: url(footer.png);
+        background-image: url(img/footer.png);
         background-size: cover;
         display:inline-block;
         
@@ -342,6 +363,13 @@ nav img {
     width: 100%;
     margin-right: 0;
 }
+
+.ciudad-der{
+    display: none;
+}
+.ciudad-izq{
+    display: none;
+}
 .zeppelin {
    display:none
 }
@@ -364,10 +392,10 @@ nav img {
     justify-content: center;
     flex-wrap: wrap;
     align-self: center;
-    width: 29.6%;
+    width: 19.6%;
 }
 .gmail {
-    width: 95%;
+    width: 72%;
     padding: 10px;
 }
 .puerta{
